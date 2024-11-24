@@ -7,7 +7,7 @@
     "config": "tailwind.config.ts",
     "css": "src/app/globals.css",
     "baseColor": "gray",
-    "cssVariables": true,
+    "cssVariables": false,
     "prefix": ""
   },
   "aliases": {
@@ -17,5 +17,5 @@
     "lib": "@/lib",
     "hooks": "@/hooks"
   },
-  "iconLibrary": "lucide"
+  "iconLibrary": "lucide" 
 }
