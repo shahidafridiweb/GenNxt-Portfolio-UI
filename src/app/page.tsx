@@ -1,9 +1,11 @@
-import Header from "./components/Layout/Header";
+import Body from "./components/appStructure/Body";
+import Header from "./components/appStructure/Header";
 
 export default function Home() {
   return (
     <div className="bg-custom min-h-screen">
       <Header />
+      <Body />
       {/* <Test */}
       {/* <footer>
         <a
