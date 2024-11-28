@@ -1,11 +1,18 @@
-import Body from "./components/appStructure/Body";
-import Header from "./components/appStructure/Header";
+// import Body from "./components/appStructure/Body";
+// import Header from "./components/appStructure/Header";
+import BackgroundVideo from "./components/BackGroundVideo";
 
 export default function Home() {
   return (
-    <div className="bg-custom min-h-screen">
-      <Header />
-      <Body />
+    <div
+      className="relative"
+    >
+      <BackgroundVideo />
+      {/* <div className="relative z-20 p-8">
+
+        <Header />
+        <Body />
+      </div> */}
       {/* <Test */}
       {/* <footer>
         <a
