@@ -77,3 +77,8 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.video-fade-css{
+  background: rgb(255,255,255);
+background: linear-gradient(180deg, rgba(255,255,255,0) 31%, rgba(27,101,152,0.6671918767507004) 48%, rgba(4,6,21,1) 83%);
+}

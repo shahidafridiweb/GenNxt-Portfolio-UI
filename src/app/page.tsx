@@ -1,5 +1,5 @@
-// import Body from "./components/appStructure/Body";
-// import Header from "./components/appStructure/Header";
+import Body from "./components/appStructure/Body";
+import Header from "./components/appStructure/Header";
 import BackgroundVideo from "./components/BackGroundVideo";
 
 export default function Home() {
@@ -8,11 +8,8 @@ export default function Home() {
       className="relative"
     >
       <BackgroundVideo />
-      {/* <div className="relative z-20 p-8">
-
-        <Header />
-        <Body />
-      </div> */}
+      <Header />
+      <Body />
       {/* <Test */}
       {/* <footer>
         <a

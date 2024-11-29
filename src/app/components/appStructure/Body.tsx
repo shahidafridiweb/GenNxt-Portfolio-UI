@@ -3,7 +3,7 @@ import Carousel from '../Carousel'
 
 const Body = () => {
     return (
-        <div>
+        <div className='absolute'>
             <div className='text-white min-h-fit flex flex-col justify-center items-center' style={{
                 padding: "150px 140px 150px 140px",
                 height: "500px",
@@ -15,9 +15,6 @@ const Body = () => {
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "flex-start",
-                    opacity: 1,
-                    flexShrink: 0,
-                    transform: "perspective(1200px) translateX(0px) translateY(0px) scale(1) rotate(0deg) rotateX(0deg) rotateY(0deg) skewX(0deg) skewY(0deg) translateZ(0px)",
                 }}>
                     <p style={{
                         color: "rgb(107, 188, 255)",
