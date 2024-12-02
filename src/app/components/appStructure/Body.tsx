@@ -1,13 +1,18 @@
 import React from 'react'
 import Carousel from '../Carousel'
+import WaterFlowEffect from '@/app/utils/WaterFlowEffect'
+import Layout from '@/app/bodySections/Layout'
+import Hero from '@/app/bodySections/Hero'
+import Details from '@/app/bodySections/About'
+import Projects from '@/app/bodySections/Projects'
+import Contact from '@/app/bodySections/Contact'
 
 const Body = () => {
     return (
-        <div className='absolute'>
+        <div className='flex-row direction-normal absolute h-full w-full'>
             <div className='text-white min-h-fit flex flex-col justify-center items-center' style={{
-                padding: "150px 140px 150px 140px",
-                height: "500px",
-                margin: "50px"
+                padding: "0px 140px 0px 140px",
+                height: "100vh",
             }}>
                 <div style={{
                     fontSize: '5rem',
@@ -21,9 +26,6 @@ const Body = () => {
                     }}>
 
                         <span style={{
-                            // padding: "250px 700px"
-                            // height: "100%"
-                            // backgroundImage: "linear-gradient(0deg, rgb(177, 223, 250) 0%, rgb(186, 224, 255) 100%)"
                         }}>{"Shahid Afridi"}
                         </span>
                     </p>
@@ -45,23 +47,14 @@ const Body = () => {
                     </p>
                 </div>
             </div >
-            <div className='flex flex-row justify-center' style={{
-            }}>
-                <video
-                    style={{
-                        width: "1200px",
-                        height: "900px",
-                    }}
-                    // className="absolute top-0 left-0 w-full h-full object-cover"
-                    autoPlay
-                    loop
-                    muted
-                >
-                    <source src="https://framerusercontent.com/assets/frnywyFHcy3y0vcaGD0nDPHMKcI.mp4" type="video/mp4" />
-                </video>
-            </div>
             <div>
-                <Carousel />
+                <div>
+                    <Layout>
+                        <Details />
+                        <Projects />
+                        <Contact />
+                    </Layout>
+                </div>
             </div>
         </div >
     )

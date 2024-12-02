@@ -9,10 +9,11 @@ export default function BackgroundVideo() {
                     loop
                     muted
                     style={{
-                        height: "700px"
+                        height: "100vh"
                     }}
                 >
-                    <source src='video/backGroundVideo.mp4' type="video/mp4" />
+                    {/* <source src='video/backGroundVideo.mp4' type="video/mp4" /> */}
+                    <source src='video/background_video_2.mp4' type="video/mp4" />
                 </video>
             </div>
             {/* <div className="relative z-10 items-center justify-center h-full bg-black bg-opacity-50">
