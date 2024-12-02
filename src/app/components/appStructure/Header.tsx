@@ -58,8 +58,17 @@ const callsToAction = [
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
+  const handleResumeDownload = () => {
+    const link = document.createElement('a');
+    link.href = '/Resume/Shahid_Afridi_Resume.pdf';
+    link.download = 'Shahid_Afridi_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+
   return (
-    <div className='absolute w-full'>
+    <div className='absolute w-full z-10'>
       <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
         <div className="flex lg:flex-auto">
           <a href="#" className="-m-1.5 p-1.5">
@@ -83,24 +92,25 @@ export default function Header() {
           </button>
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
-          <a href="expertise" className="text-sm/6 font-semibold text-slate-50">
+          {/* <a href="expertise" className="text-sm/6 font-semibold text-slate-50">
             Work
-          </a>
-          <a href="expertise" className="text-sm/6 font-semibold text-slate-50">
+          </a> */}
+          {/* <a href="expertise" className="text-sm/6 font-semibold text-slate-50">
             Expertise
-          </a>
+          </a> */}
           <a href="about" className="text-sm/6 font-semibold text-slate-50">
             About
           </a>
-          <a href="pricing" className="text-sm/6 font-semibold text-slate-50">
+          {/* <a href="pricing" className="text-sm/6 font-semibold text-slate-50">
             Pricing
-          </a>
-          <a href="blog" className="text-sm/6 font-semibold text-slate-50">
+          </a> */}
+          {/* <a href="blog" className="text-sm/6 font-semibold text-slate-50">
             Blog
-          </a>
+          </a> */}
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <DropdownMenu>
+          <Button onClick={handleResumeDownload} variant="outline">Download Resume</Button>
+          {/* <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="outline">Get in touch</Button>
             </DropdownMenuTrigger>
@@ -128,8 +138,8 @@ export default function Header() {
                   <Button variant="outline">Download Resume</Button>
                   <DropdownMenuShortcut>⌘K</DropdownMenuShortcut>
                 </DropdownMenuItem>
-              </DropdownMenuGroup>
-              {/* <DropdownMenuSeparator />
+              </DropdownMenuGroup> */}
+          {/* <DropdownMenuSeparator />
               <DropdownMenuGroup>
                 <DropdownMenuItem>
                   <Users />
@@ -183,10 +193,10 @@ export default function Header() {
                 <span>Log out</span>
                 <DropdownMenuShortcut>⇧⌘Q</DropdownMenuShortcut>
               </DropdownMenuItem> */}
-            </DropdownMenuContent>
-          </DropdownMenu>
+          {/* </DropdownMenuContent>
+      </DropdownMenu> */}
         </div>
-      </nav>
+      </nav >
       <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
         <div className="fixed inset-0 z-10" />
         <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
@@ -261,6 +271,6 @@ export default function Header() {
           </div>
         </DialogPanel>
       </Dialog>
-    </div>
+    </div >
   )
 }
