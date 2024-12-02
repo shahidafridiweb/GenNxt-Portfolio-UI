@@ -94,7 +94,7 @@ export default function Header() {
         <nav className="container mx-auto flex justify-between items-center">
           <a href="#" >
             <div className="flex-1 flex justify-start self-center flex-row">
-              <img src='/images/app_logo.png' className='h-32'></img>
+              <img src={`${prefix}/images/app_logo.png`} className='h-32'></img>
               <span style={{
                 color: "#fff",
                 alignContent: "center",
