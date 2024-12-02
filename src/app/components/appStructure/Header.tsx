@@ -41,6 +41,7 @@ import {
   Settings,
   User,
 } from "lucide-react"
+import { prefix } from '@/app/utils/Prefix';
 
 
 const products = [
@@ -60,7 +61,7 @@ export default function Header() {
 
   const handleResumeDownload = () => {
     const link = document.createElement('a');
-    link.href = '/Resume/Shahid_Afridi_Resume.pdf';
+    link.href = `${prefix}/Resume/Shahid_Afridi_Resume.pdf`;
     link.download = 'Shahid_Afridi_Resume.pdf';
     document.body.appendChild(link);
     link.click();
