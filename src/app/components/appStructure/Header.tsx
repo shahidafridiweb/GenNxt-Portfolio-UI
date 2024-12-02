@@ -70,31 +70,11 @@ export default function Header() {
 
   return (
     <div className='fixed top-0 w-full z-10'>
-      {/* <div aria-label="Global" className="flex">
-        <a href="#" >
-          <div className="flex-1 flex justify-start self-center flex-row">
-            <img src='/images/app_logo.png' className='h-32'></img>
-            <span style={{
-              color: "#fff",
-              alignContent: "center",
-              paddingLeft: "10px"
-            }}>
-              {"GenNxt by Shahid Afridi"}</span>
-          </div>
-        </a>
-        <div className="flex-1 flex justify-end self-center p-10">
-          <a href="about" className="px-5 self-center text-white">
-            About
-          </a>
-          <Button onClick={handleResumeDownload} variant="outline">Download Resume</Button>
-        </div>
-      </div > */}
-
-      <header className="fixed top-0 left-0 w-full px-4 bg-opacity-50 backdrop-blur-sm z-10">
-        <nav className="container mx-auto flex justify-between items-center">
+      <header className="fixed top-0 left-0 w-full px-4 bg-opacity-50 backdrop-blur-sm z-10 h-24">
+        <nav className="container mx-auto flex justify-between items-center h-24">
           <a href="#" >
             <div className="flex-1 flex justify-start self-center flex-row">
-              <img src={`${prefix}/images/app_logo.png`} className='h-32'></img>
+              <img src={`${prefix}/images/app_logo.png`} className='h-20'></img>
               <span style={{
                 color: "#fff",
                 alignContent: "center",
