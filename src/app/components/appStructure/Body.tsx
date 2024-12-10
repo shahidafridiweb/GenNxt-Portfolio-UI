@@ -4,7 +4,7 @@ import WaterFlowEffect from '@/app/utils/WaterFlowEffect'
 import Layout from '@/app/bodySections/Layout'
 import Hero from '@/app/bodySections/Hero'
 import Details from '@/app/bodySections/About'
-import Projects from '@/app/bodySections/Projects'
+import Projects from '@/app/bodySections/MyExperience'
 import Contact from '@/app/bodySections/Contact'
 
 const Body = () => {

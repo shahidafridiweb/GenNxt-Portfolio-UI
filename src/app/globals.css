@@ -78,7 +78,55 @@ body {
   }
 }
 
-.video-fade-css{
+.video-fade-css {
   /* background: rgb(255,255,255); */
-background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(17,39,54,0.571953781512605) 0%, rgba(6,8,25,0.9024859943977591) 28%, rgba(4,6,21,0.9697128851540616) 66%);;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(17, 39, 54, 0.571953781512605) 0%, rgba(6, 8, 25, 0.9024859943977591) 28%, rgba(4, 6, 21, 0.9697128851540616) 66%);
+  ;
+}
+
+@font-face {
+  font-family: 'Cinzel';
+  src: url('/fonts/Cinzel-VariableFont_wght.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Cinzel'
+}
+
+@media (min-width: 640px) {
+  .sm-only {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .md-only {
+    display: block;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg-only {
+    display: block;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl-only {
+    display: block;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl-only {
+    display: block;
+  }
+}
+
+@media (min-width: 1536px) {
+  .xxl-only {
+    display: block;
+  }
 }

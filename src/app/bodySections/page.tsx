@@ -5,7 +5,7 @@ import UnderConstructionBanner from '../components/UnderConstructionBanner'
 import Layout from './Layout'
 import Hero from './Hero'
 import Details from './About'
-import Projects from './Projects'
+import MyExperience from './MyExperience'
 import Contact from './Contact'
 
 const Page = () => {
@@ -16,7 +16,7 @@ const Page = () => {
         <Layout>
           <Hero />
           <Details />
-          <Projects />
+          <MyExperience />
           <Contact />
         </Layout>
       </div>
