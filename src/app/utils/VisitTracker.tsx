@@ -32,7 +32,6 @@ const VisitTracker = () => {
             .catch(error => { console.error('Error triggering dispatch event:', error); }); 
         }, []);
 
-
   return null;
 };
 
