@@ -1,0 +1,25 @@
+name: Track Visits
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  log-visits:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Log Visits to Google Sheets
+        uses: jroehl/gsheet.action@v2.0.0
+        with:
+          spreadsheetId: 1ChLN5SbP-kVudIBvbQrM8x4vjnMoqzJqk3cqlomWPOI
+          commands: |
+            [
+              { "command": "appendData", "args": { "data": [["New Visit", "Timestamp"]] }}
+            ]
+        env:
+          GSHEET_CLIENT_EMAIL: ${{ secrets.GSHEET_CLIENT_EMAIL }}
+          GSHEET_PRIVATE_KEY: ${{ secrets.GSHEET_PRIVATE_KEY }}
