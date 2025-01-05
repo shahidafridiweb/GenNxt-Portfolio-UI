@@ -16,7 +16,7 @@ jobs:
         uses: jroehl/gsheet.action@v2.0.0
         with:
           spreadsheetId: 1ChLN5SbP-kVudIBvbQrM8x4vjnMoqzJqk3cqlomWPOI
-          worksheetTitle: Visits
+          worksheetTitle: GenNxt Logs
           commands: |
             [
               { "command": "appendData", "args": { "data": [["New Visit", "Timestamp"]] }}
