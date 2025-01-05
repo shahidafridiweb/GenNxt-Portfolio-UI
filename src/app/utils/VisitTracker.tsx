@@ -1,5 +1,6 @@
 'use client'
 import { useEffect } from 'react';
+import { ghToken } from './Prefix';
 
 const VisitTracker = () => {
 //   useEffect(() => {
@@ -19,7 +20,7 @@ const VisitTracker = () => {
     { 
         method: 'POST', 
         headers: { 
-            'Authorization': `Bearer ${process.env.NEXT_PUBLIC_GH_TOKEN}`, 
+            'Authorization': `Bearer ${ghToken}`, 
             'Accept': 'application/vnd.github.v3+json' 
         }, 
             
@@ -31,7 +32,6 @@ const VisitTracker = () => {
             .catch(error => { console.error('Error triggering dispatch event:', error); }); 
         }, []);
 
-  console.log('Visit tracked');
 
   return null;
 };
