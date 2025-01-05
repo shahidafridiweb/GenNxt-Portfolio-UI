@@ -1,5 +1,5 @@
 import React from 'react'
-import Carousel from '../Carousel'
+import Carousel from '../../utils/Carousel'
 import WaterFlowEffect from '@/app/utils/WaterFlowEffect'
 import Layout from '@/app/bodySections/Layout'
 import Hero from '@/app/bodySections/Hero'

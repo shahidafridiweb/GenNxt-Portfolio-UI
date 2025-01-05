@@ -5,7 +5,7 @@ const MyExperience: FC = () => {
     const projectData =
         [
             {
-                title: "Full Stack Developer",
+                title: "Senior Software Engineer",
                 company: "Deloitte",
                 duration: "April 2024 - Present",
                 location: "Bengaluru, India",
@@ -34,9 +34,9 @@ const MyExperience: FC = () => {
         <section id="projects" className="py-32">
             <h2 className="text-3xl font-semibold text-center mb-12">My Experience</h2>
             <div className="flex justify-center gap-8 flex-wrap flex-col content-center">
-                {projectData.map((project) => {
+                {projectData.map((project, key) => {
                     return (
-                        <div className="bg-gray-800 text-white p-6 rounded-lg shadow-lg w-2/3">
+                        <div className="bg-gray-800 text-white p-6 rounded-lg shadow-lg w-2/3" key={key}>
                             <h3 className="text-xl font-semibold mb-4">{project.title}</h3>
                             <h3 className="text-xl font-semibold mb-4">{project.company}</h3>
                             <h3 className="text-xl font-semibold mb-4">{project.duration}</h3>

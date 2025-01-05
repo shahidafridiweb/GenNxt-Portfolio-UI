@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react'
-import UnderConstructionBanner from '../components/UnderConstructionBanner'
+import UnderConstructionBanner from '../utils/UnderConstructionBanner'
 import Layout from './Layout'
 import Hero from './Hero'
 import Details from './About'

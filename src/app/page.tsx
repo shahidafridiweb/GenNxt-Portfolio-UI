@@ -1,12 +1,14 @@
 import Body from "./components/appStructure/Body";
 import Header from "./components/appStructure/Header";
-import BackgroundVideo from "./components/BackGroundVideo";
+import BackgroundVideo from "./utils/BackGroundVideo";
+import VisitTracker from "./utils/VisitTracker";
 
 export default function Home() {
   return (
     <div
       className="relative"
     >
+      <VisitTracker />
       <BackgroundVideo />
       <Header />
       <Body />

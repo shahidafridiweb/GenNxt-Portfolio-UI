@@ -82,7 +82,7 @@ export default function Header() {
 
   return (
     <div className='fixed top-0 w-full z-10'>
-      <header className="fixed top-0 left-0 w:full lg:w-full md:w-screen px-4 bg-opacity-50 backdrop-blur-sm z-10 h-24">
+      <header className="fixed top-0 left-0 lg:w-full md:w-screen px-4 bg-opacity-50 backdrop-blur-sm z-10 h-24">
         <nav className="container flex justify-between items-center h-24">
           <a href="#" >
             <div className="flex-1 flex justify-start self-center flex-row">
@@ -96,6 +96,7 @@ export default function Header() {
                 {"GenNxt by Shahid Afridi"}</span>
             </div>
           </a>
+          <div className='xs:d'></div>
           <ul className="flex space-x-8 text-white self-center">
             <li className='self-center'><a href="#about">About</a></li>
             <li className='self-center'><a href="#projects">Career</a></li>
