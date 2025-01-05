@@ -18,7 +18,7 @@ jobs:
           spreadsheetId: 1ChLN5SbP-kVudIBvbQrM8x4vjnMoqzJqk3cqlomWPOI
           commands: |
             [
-              { "command": "appendData", "args": { "data": [["New Visit", (new Date()).toISOString()]] }}
+              { "command": "appendData", "args": { "data": [["New Visit", "TIMESTAMP"]] }}
             ]
         env:
           GSHEET_CLIENT_EMAIL: ${{ secrets.GSHEET_CLIENT_EMAIL }}
