@@ -51,8 +51,20 @@ export default {
 					'5': 'hsl(var(--chart-5))'
 				},
 			},
-			animation: { 'gradient-x': 'gradient-x 15s ease infinite', },
-			keyframes: { 'gradient-x': { '0%, 100%': { 'background-size': '200% 200%', 'background-position': 'left center' }, '50%': { 'background-size': '200% 200%', 'background-position': 'right center' } } },
+			animation: {
+				'gradient-x': 'gradient-x 15s ease infinite',
+				'fade-in-up': 'fade-in-up 0.5s ease-out forwards',
+			},
+			keyframes: {
+				'gradient-x': {
+					'0%, 100%': { 'background-size': '200% 200%', 'background-position': 'left center' },
+					'50%': { 'background-size': '200% 200%', 'background-position': 'right center' }
+				},
+				'fade-in-up': {
+					'0%': { opacity: '0', transform: 'translateY(20px)' },
+					'100%': { opacity: '1', transform: 'translateY(0)' },
+				}
+			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
@@ -65,19 +77,19 @@ export default {
 
 			'sm': '640px',
 			// => @media (min-width: 640px) { ... }
-	  
+
 			'md': '768px',
 			// => @media (min-width: 768px) { ... }
-	  
+
 			'lg': '1024px',
 			// => @media (min-width: 1024px) { ... }
-	  
+
 			'xl': '1280px',
 			// => @media (min-width: 1280px) { ... }
-	  
+
 			'2xl': '1536px',
 			// => @media (min-width: 1536px) { ... }
-		  }
+		}
 	},
 	plugins: [require("tailwindcss-animate")],
 } satisfies Config;

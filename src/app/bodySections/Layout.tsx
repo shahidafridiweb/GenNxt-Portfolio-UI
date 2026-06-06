@@ -4,28 +4,24 @@ import { GitHubIcon, InstagramIcon, LinkedInIcon } from '../utils/footerIcons';
 
 const Layout: FC<{ children: React.ReactNode }> = ({ children }) => {
     return (
-        <div className="min-h-screen bg-gray-900 text-white">
-            <main className="">{children}</main>
-            <footer className="flex bg-gray-800 text-center py-6 justify-between px-9">
-                <div className='flex'>
-                    <p className='px-2'>
-                        <a href="https://github.com/shahidafridiweb" target="_blank" rel="noopener noreferrer">
+        <div className="min-h-screen bg-background text-foreground">
+            <main className="container mx-auto px-4 py-8">{children}</main>
+            <footer className="glass mt-auto border-t border-white/10">
+                <div className="container mx-auto px-4 py-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                    <div className='flex gap-6'>
+                        <a href="https://github.com/shahidafridiweb" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                             <GitHubIcon />
                         </a>
-                    </p>
-                    <p className='px-2'>
-                        <a href="https://www.linkedin.com/in/shahid-afridi-127162186/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/in/shahid-afridi-127162186/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                             <LinkedInIcon />
                         </a>
-                    </p>
-                    <p className='px-2'>
-                        <a href="https://www.instagram.com/_shahid._.afridi_/profilecard/?igsh=MXczNXQ0MWxlc3JzZA==" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.instagram.com/_shahid._.afridi_/profilecard/?igsh=MXczNXQ0MWxlc3JzZA==" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                             <InstagramIcon />
                         </a>
-                    </p>
-                </div>
-                <div>
-                    <p>&copy; 2024 Shahid Afridi</p>
+                    </div>
+                    <div>
+                        <p className="text-sm text-muted-foreground">&copy; {new Date().getFullYear()} Shahid Afridi. All rights reserved.</p>
+                    </div>
                 </div>
             </footer>
         </div>
