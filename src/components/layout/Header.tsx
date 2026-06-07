@@ -5,26 +5,23 @@ import {
   Dialog,
   DialogPanel,
 } from '@headlessui/react'
+ import Image from 'next/image'
 import {
   Bars3Icon,
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 import { Button } from "@/components/ui/button"
 import { prefix } from '@/lib/prefix';
-
-const navigation = [
-  { name: 'About', href: '#about' },
-  { name: 'Career', href: '#projects' },
-  { name: 'Contact', href: '#contact' },
-]
+import portfolioData from '@/data/portfolio.json';
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const { navigation, personal, branding } = portfolioData;
 
   const handleResumeDownload = () => {
     const link = document.createElement('a');
-    link.href = `${prefix}/Resume/Shahid_Afridi_Resume.pdf`;
-    link.download = 'Shahid_Afridi_Resume.pdf';
+    link.href = `${prefix}${personal.resume.path}`;
+    link.download = personal.resume.fileName;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -36,13 +33,16 @@ export default function Header() {
         <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5 flex items-center gap-3">
-              <img
+              <Image
                 className="h-12 w-auto"
-                src={`${prefix}/images/genNxt_logo.png`}
-                alt="GenNxt Logo"
+                src={`${prefix}${branding.logos.main}`}
+                alt={`${branding.appName} Logo`}
+                width={48}
+                height={48}
+                priority
               />
               <span className="text-xl font-bold text-foreground tracking-wide font-cinzel">
-                GenNxt
+                {branding.appName}
               </span>
             </a>
           </div>
@@ -78,11 +78,13 @@ export default function Header() {
           <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-background px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white/10 glass">
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">GenNxt</span>
-                <img
+                <span className="sr-only">{branding.appName}</span>
+                <Image
                   className="h-10 w-auto"
-                  src={`${prefix}/images/app_logo.png`}
-                  alt=""
+                  src={`${prefix}${branding.logos.mobile}`}
+                  alt={`${branding.appName} Logo`}
+                  width={40}
+                  height={40}
                 />
               </a>
               <button

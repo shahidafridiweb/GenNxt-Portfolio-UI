@@ -1,0 +1,167 @@
+{
+  "personal": {
+    "name": "Shahid Afridi",
+    "title": "Delve into tomorrow's Web Development",
+    "tagline": "Driving positive change by creating impactful design solutions.",
+    "resume": {
+      "path": "/Resume/Shahid_Afridi_Resume.pdf",
+      "fileName": "Shahid_Afridi_Resume.pdf"
+    },
+    "contact": {
+      "email": "work.shahid.afridi@gmail.com"
+    },
+    "location": "Bengaluru, India"
+  },
+  "navigation": [
+    {
+      "name": "About",
+      "href": "#about"
+    },
+    {
+      "name": "Career",
+      "href": "#projects"
+    },
+    {
+      "name": "Contact",
+      "href": "#contact"
+    }
+  ],
+  "about": {
+    "title": "Hi, I'm Shahid Afridi 👋",
+    "description": "I'm a passionate Web Developer based in Bengaluru, India. I specialize in crafting dynamic, user-friendly web applications with clean and responsive designs. My expertise lies in modern web technologies like React.js, TypeScript, and AWS services, ensuring robust and scalable solutions. I thrive in collaborative environments, consistently delivering user-focused and high-performance applications. Outside of work, I enjoy exploring new tech trends and optimizing workflows to bring innovative ideas to life."
+  },
+  "experience": [
+    {
+      "title": "Software Engineer II",
+      "company": "JP Morgan Chase & Co.",
+      "duration": "November 2025 - Present",
+      "location": "Bengaluru, India",
+      "description": [
+       "Developed and maintained backend microservices for banking and transfer domains using Java and Spring Boot, focusing on scalable and secure transaction processing systems.",
+        "Worked on real-time transfer systems enabling instant fund movement between bank accounts with emphasis on transaction reliability, low latency, and secure processing.",
+        "Contributed to subledger transaction modules, including allowance and chores management workflows between parent and child accounts, handling balance updates and transaction tracking.",
+        "Implemented internal fund transfer functionalities supporting seamless transfers between customer-owned accounts within the banking ecosystem.",
+        "Developed external account management features allowing customers to link and manage external bank accounts for transfers and related financial operations.",
+        "Integrated and worked with databases including PostgreSQL and Amazon Aurora using tools such as DBeaver for query optimization, debugging, and data validation.",
+        "Utilized tools and platforms including Maven, Swagger, Splunk, Liquibase, and PactFlow for API development, monitoring, database versioning, and contract testing.",
+        "Worked with version control and collaboration platforms including Git, Bitbucket, Jira, and Confluence for agile delivery and documentation management.",
+        "Leveraged AI-assisted development tools such as GitHub Copilot along with Jira MCP and Confluence MCP integrations to improve development productivity, requirement analysis, and documentation workflows.",
+        "Participated in organizational Innovation Week hackathon initiatives, collaborating on innovative solution development and rapid prototyping within banking technology use cases."
+                ]
+    },
+    {
+      "title": "Senior Software Engineer",
+      "company": "Deloitte",
+      "duration": "April 2024 - October 2025",
+      "location": "Bengaluru, India",
+      "description": [
+        "Developed innovative customer-facing and internal web applications for a prestigious German luxury automobile client, utilizing React.js, TypeScript, Vite, and JavaScript to deliver exceptional digital experiences across multiple high-impact projects.",
+        "Engineered highly interactive and visually stunning user interfaces with React.js and TypeScript, driving engagement and ensuring seamless user experiences.",
+        "Leveraged Vite to streamline development and build processes, significantly boosting overall project efficiency and reducing time-to-market.",
+        "Employed React Testing Library, Jest, and SonarQube to guarantee robust functionality and maintainable code, leading to reduced errors and improved code quality.",
+        "Utilized the i18n framework for localizing web applications into multiple languages, catering to a diverse global audience.",
+        "Facilitated smooth communication between front-end and back-end services by integrating APIs using Swagger and Postman.",
+        "Designed scalable serverless solutions using AWS Lambda and CloudFront, enhancing performance and reducing infrastructure costs."
+      ]
+    },
+    {
+      "title": "Associate Developer",
+      "company": "Cognizant Technology Solutions",
+      "duration": "December 2020 - March 2024",
+      "location": "Bengaluru, India",
+      "description": [
+        "Engineered sophisticated web applications leveraging React, Redux, JavaScript, TypeScript, HTML, CSS, and JSON to deliver seamless and dynamic user experiences.",
+        "Utilized Git, Fiddler, Jenkins, VS Code, Swagger, IBM RTC, and Cloud Controller to enhance project workflows and support strong DOM manipulation practices.",
+        "Gained extensive experience working with REST APIs and JSON for efficient and reliable data exchange.",
+        "Crafted responsive designs using Bootstrap and Material UI, ensuring cross-browser compatibility and optimal user experiences.",
+        "Designed and developed a secure web application for a banking and financial institution, facilitating financial transactions and integrating SWIFT, MPF, Fedwire, and IBT payment methods.",
+        "Collaborated on a dynamic telecommunication web application that enabled retail store employees to manage customer requests, plan upgrades, and device purchases.",
+        "Used SonarQube, Elastic Kibana, and Jira to drive project management, quality assurance, and data analysis, improving efficiency by 25%.",
+        "Worked with cross-functional teams across China, USA, and Australia to enhance global communication and project delivery."
+      ]
+    }
+  ],
+  "companies": [
+    {
+      "name": "Adobe",
+      "logo": "brandLogos/Adobe.png"
+    },
+    {
+      "name": "Android",
+      "logo": "brandLogos/Android.png"
+    },
+    {
+      "name": "Apple",
+      "logo": "brandLogos/Apple.png"
+    },
+    {
+      "name": "Dell",
+      "logo": "brandLogos/Dell.png"
+    },
+    {
+      "name": "EA",
+      "logo": "brandLogos/EA.png"
+    },
+    {
+      "name": "Google",
+      "logo": "brandLogos/Google.png"
+    },
+    {
+      "name": "IBM",
+      "logo": "brandLogos/IBM.png"
+    },
+    {
+      "name": "Microsoft",
+      "logo": "brandLogos/Microsoft.png"
+    },
+    {
+      "name": "NVIDIA",
+      "logo": "brandLogos/NVIDIA.png"
+    },
+    {
+      "name": "SAP",
+      "logo": "brandLogos/SAP.jpg"
+    },
+    {
+      "name": "Zoom",
+      "logo": "brandLogos/Zoom.png"
+    },
+    {
+      "name": "Deloitte",
+      "logo": "brandLogos/deloitte.svg"
+    },
+    {
+      "name": "Intel",
+      "logo": "brandLogos/intel.png"
+    },
+    {
+      "name": "Oracle",
+      "logo": "brandLogos/oracle.png"
+    }
+  ],
+  "socialLinks": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com/shahidafridiweb",
+      "icon": "GitHubIcon"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/shahid-afridi-127162186/",
+      "icon": "LinkedInIcon"
+    },
+    {
+      "name": "Instagram",
+      "url": "https://www.instagram.com/_shahid._.afridi_/profilecard/?igsh=MXczNXQ0MWxlc3JzZA==",
+      "icon": "InstagramIcon"
+    }
+  ],
+  "branding": {
+    "appName": "GenNxt",
+    "logos": {
+      "main": "/images/genNxt_logo.png",
+      "mobile": "/images/app_logo.png"
+    },
+    "backgroundVideo": "video/background_video_2.mp4"
+  }
+}

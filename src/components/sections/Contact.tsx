@@ -1,7 +1,10 @@
 import { FC } from 'react';
 import { Button } from "@/components/ui/button"
+import portfolioData from '@/data/portfolio.json';
 
 const Contact: FC = () => {
+    const { personal } = portfolioData;
+    
     return (
         <section id="contact" className="py-20 text-center">
             <div className="glass max-w-2xl mx-auto p-10 rounded-2xl">
@@ -9,9 +12,9 @@ const Contact: FC = () => {
                 <p className="text-lg text-gray-300 mb-8">
                     Feel free to reach out if you&apos;d like to collaborate or just say hi!
                 </p>
-                <a href="mailto:work.shahid.afridi@gmail.com">
+                <a href={`mailto:${personal.contact.email}`}>
                     <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
-                        work.shahid.afridi@gmail.com
+                        {personal.contact.email}
                     </Button>
                 </a>
             </div>

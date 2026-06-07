@@ -1,24 +1,10 @@
 import React from 'react';
 import '../css/carousel.css'; // You can add additional custom styles here
-
-const companies = [
-  { name: 'Adobe', logo: 'brandLogos/Adobe.png' },
-  { name: 'Android', logo: 'brandLogos/Android.png' },
-  { name: 'Apple', logo: 'brandLogos/Apple.png' },
-  { name: 'Dell', logo: 'brandLogos/Dell.png' },
-  { name: 'EA', logo: 'brandLogos/EA.png' },
-  { name: 'Google', logo: 'brandLogos/Google.png' },
-  { name: 'IBM', logo: 'brandLogos/IBM.png' },
-  { name: 'Microsoft', logo: 'brandLogos/Microsoft.png' },
-  { name: 'NVIDIA', logo: 'brandLogos/NVIDIA.png' },
-  { name: 'SAP', logo: 'brandLogos/SAP.jpg' },
-  { name: 'Zoom', logo: 'brandLogos/Zoom.png' },
-  { name: 'Deloitte', logo: 'brandLogos/deloitte.svg' },
-  { name: 'Intel', logo: 'brandLogos/intel.png' },
-  { name: 'Oracle', logo: 'brandLogos/oracle.png' },
-];
+import portfolioData from '@/data/portfolio.json';
 
 const Carousel: React.FC = () => {
+  const { companies } = portfolioData;
+
   return (
     <div className="relative w-4/5 overflow-hidden" style={{
       justifySelf: 'center'
